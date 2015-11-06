@@ -38,7 +38,7 @@ library(lubridate)
 epc$Date <- dmy(epc$Date)
 class(epc$Date)
 
-# Cocatanate Date and Time. Assign to vector d_t
+# Concatanate Date and Time. Assign to vector d_t
 d_t <- paste(epc$Date, epc$Time)
 d_t <- as.POSIXlt(d_t)
 class(d_t)
